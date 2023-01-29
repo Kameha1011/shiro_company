@@ -15,19 +15,19 @@
 <body>
     <nav class="navbar navbar-expand-lg sticky-top ">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#">Shiro Company</a>
+            <a class="navbar-brand ms-lg-4" href="#">Shiro Company</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav navbar-center">
                     <a class="nav-link"href="#">Home</a>
                     <a class="nav-link" href="#about">¿Por qué Shiro?</a>
                     <a class="nav-link" href="#portfolio">Portafolio</a>
-                    <a class="nav-link" href="#">Artistas</a>
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#artistas">Artistas</a>
+                    <a class="nav-link" href="#form">Contrátanos</a>
                 </div>
-                <div class="navbar-nav ms-5">
+                <div class="navbar-nav ms-lg-5">
                     <a class="nav-link" href="#">Registrarse</a>
                     <a class="nav-link" href="#">Iniciar Sesión</a>
                 </div>
@@ -43,27 +43,6 @@
         <section class="container d-flex flex-column align-items-center justify-content-center my-5" id="about">
             <h1>¿Por qué Shiro?</h1>
             <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, veritatis? Quis cum deleniti consequuntur quaerat, iure dolor aliquam minima eius dolore exercitationem ut. Esse tempore magnam, obcaecati hic inventore consequatur debitis dignissimos mollitia optio iure! Eos quia rem voluptatem dignissimos eum praesentium saepe rerum incidunt mollitia illum quae accusamus ratione repellendus doloribus, in quaerat adipisci voluptas distinctio ad, quod ipsa? Sunt fugit magni itaque rerum mollitia nemo a. Cumque assumenda nemo eaque ratione similique officia tempora rerum vel dolorem sint.</p>
-        </section>
-        <section class="container p-5 my-3" id="form">
-            <h2 class="text-center">¡Rellena este formulario para que te contactemos!</h2>
-            <form action="/form" method="post" class="container-fluid d-flex flex-wrap justify-content-evenly mt-5">
-                <div class="input">
-                    <label for=""> Nombre </label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="input">
-                    <label for=""> Apellido </label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="input">
-                    <label for=""> Correo </label>
-                    <input type="email" class="form-control">
-                </div>
-                <div class="form-text mx-5">
-                    <p class="lead text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil voluptatem velit aliquam ex alias quasi temporibus unde sit, nemo ad itaque, sapiente perspiciatis quidem fugit aliquid voluptatibus tenetur. Quo necessitatibus facilis expedita delectus placeat tempora, obcaecati unde? Totam ab in eius deleniti dolore earum pariatur ipsum placeat repudiandae accusamus. <a href="#">Politica de Privacidad</a></p>
-                </div>
-                <button class="btn mt-3">CONTRATA NUESTROS SERVICIOS </button>
-            </form>
         </section>
         <section class="container my-5" id="servicios">
             <h2 class="text-center">¿Qué servicios ofrecemos?</h2>
@@ -98,7 +77,7 @@
         </section>
         <section class="container my-5" id="portfolio">
             <h1 class="text-center mb-5">Portfolio</h1>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="false">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -192,16 +171,47 @@
                 
                 
         </section>
+        <section class="container p-5 my-5" id="form">
+            <h2 class="text-center">¡Rellena este formulario para que te contactemos!</h2>
+            <form action="/form" method="post" class="container-fluid d-flex flex-wrap justify-content-evenly mt-5">
+                <div class="input">
+                    <label for="nombre" class="form-label"> Nombre <sup>*</sup>  </label>
+                    <input type="text" class="form-control" name="nombre">
+                </div>
+                <div class="input">
+                    <label for="apellido" class="form-label" > Apellido <sup>*</sup>  </label>
+                    <input type="text" class="form-control" name="apellido">
+                </div>
+                <div class="input">
+                    <label for="correo" class="form-label"> Correo <sup>*</sup>  </label>
+                    <input type="email" class="form-control" name="correo">
+                </div>
+                <div class="form-text mx-5">
+                    <p class="lead text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil voluptatem velit aliquam ex alias quasi temporibus unde sit, nemo ad itaque, sapiente perspiciatis quidem fugit aliquid voluptatibus tenetur. Quo necessitatibus facilis expedita delectus placeat tempora, obcaecati unde? Totam ab in eius deleniti dolore earum pariatur ipsum placeat repudiandae accusamus. <a href="#">Politica de Privacidad</a></p>
+                </div>
+                <button class="btn mt-3">CONTRATA NUESTROS SERVICIOS </button>
+            </form>
+        </section>
     </main>
 
-    <footer class="container-fluid">
-        <div class="container-fluid d-flex">
-
-        </div>
-        <div>
+    <footer class="container-fluid d-flex align-items-center ">
+        <div class="container-fluid">
             <p class="text-center">&copy 2023 Shiro Company S.A. Todos los Derechos Reservados</p>
         </div>
-    
+        <div class="container-fluid">
+            <ul class="d-flex justify-content-end">
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

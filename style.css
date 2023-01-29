@@ -1,11 +1,12 @@
 body{
   margin: 0;
   background-color: #e4c8a9;
+  overflow-x: hidden;
 }
 /*   Navbar */
 
 .navbar{
-    border-bottom: .1rem solid #422800;
+    border-bottom: .3rem solid #422800;
     background-color: #e4c8a9;
     color: #650d03;
 }
@@ -140,10 +141,17 @@ transform: translate(2px, 2px);
 
 /*  footer  */
 footer{
-  height: 15rem;
+  height: 5rem;
   background-color: #422800;
   color: #e4c8a9;
 }
+footer ul{
+ list-style: none;
+}
+footer i{
+  color: #e4c8a9;
+}
+
 /************/
 
 @media (min-width: 768px) {
