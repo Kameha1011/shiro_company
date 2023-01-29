@@ -1,23 +1,50 @@
-
-
+body{
+  margin: 0;
+  background-color: #e4c8a9;
+}
 /*   Navbar */
 
 .navbar{
     border-bottom: .1rem solid #422800;
+    background-color: #e4c8a9;
+    color: #650d03;
 }
-.Navbar-center{
+.navbar-center{
     margin: 0 16rem;
 }
+.nav-link, .navbar-brand{
+  color: #650d03;
+}
 
-/*   Head */
 
+
+/* main styles */
 main{
   width: 100%;
   height: auto;
+  background-color: #e4c8a9;
+  color:  #650d03;
+  overflow: hidden;
 }
+a{
+  text-decoration: none;
+  color: #422800;
+}
+a:hover{
+  text-decoration: none;
+  color: #422800;
+}
+.lead{
+  color: #650d03;
+}
+.btn {
+  background-color: #650d03;
+  color: #e4c8a9;
+  border: 1px solid #422800;
+}
+/**************/
+/*   Head */
 header{
-  position: relative;
-  bottom: 60px;
   height: 100vh;
   background-image: url(./images/banner.jpg);
   background-size: 100% 100vh;
@@ -53,16 +80,71 @@ background-color: #fff;
 box-shadow: #422800 2px 2px 0 0;
 transform: translate(2px, 2px);
 }
-
-/* Form */
-
-form .input {
+/*********************/
+/* Call to action Form */
+#form{
+  border-radius: 1rem;
+  background-color: #a17048;
+  color: #650d03;
+}
+.input {
   width: 15rem;
+}
+.form-control, .form-control:focus{
+  background-color: #e4c8a9;
+  color: #650d03;
+  border: 1px solid #422800;
+  box-shadow: none;
 }
 .form-text{
   width: 60rem;
 }
+/************************/
+/*   Servicios   */
+#servicios img{
+  width: 35rem;
+  height: 25rem;
 
+}
+/************************/
+/*   Portafolio  */
+.carousel img {
+  height: 40rem;
+}
+.carousel-caption{
+  color: #650d03;
+}
+/************************/
+
+/*   Artistas    */
+.artist-picture{
+  margin: 5rem 3rem;
+  color: #fff;
+}
+.artist-picture p{
+  position: relative;
+  left: 1rem;
+  bottom: 2rem;
+}
+.artist-picture img{
+  height: 20rem;
+  width: 20rem;
+}
+.artist-picture .social-media-icons{
+  
+  position: relative;
+  left: 16rem;
+  bottom: 22rem;
+  list-style: none;
+}
+
+/*  footer  */
+footer{
+  height: 15rem;
+  background-color: #422800;
+  color: #e4c8a9;
+}
+/************/
 
 @media (min-width: 768px) {
 .cta-button {

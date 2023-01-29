@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- custom styles -->
     <link rel="stylesheet" href="style.css">
     <title>Shiro</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+    <nav class="navbar navbar-expand-lg sticky-top ">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="#">Shiro Company</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
-                <div class="navbar-nav Navbar-center">
-                    <a class="nav-link active"href="#">Home</a>
-                    <a class="nav-link" href="#">¿Por qué Shiro?</a>
-                    <a class="nav-link" href="#">Portafolio</a>
+                <div class="navbar-nav navbar-center">
+                    <a class="nav-link"href="#">Home</a>
+                    <a class="nav-link" href="#about">¿Por qué Shiro?</a>
+                    <a class="nav-link" href="#portfolio">Portafolio</a>
                     <a class="nav-link" href="#">Artistas</a>
                     <a class="nav-link" href="#">Blog</a>
                 </div>
@@ -30,15 +34,18 @@
             </div>
         </div>
     </nav>
-    
     <main>
         <header class='container-fluid d-flex flex-column align-items-center justify-content-center'>
                 <h1 class='display-1'>Texto épico a lo Rocky Balboa IV</h1>
-                <h5>Anthony es muy muy muy muy muy muy muy muy muy muy muy muy gayyyyyyyyyyyyy</h5>
-                <button class='cta-button'>Contrátanos</button>  
+                <h5>Soluciones digitales tan sólo a un click.</h5>
+                <a class='cta-button' href="#form">Contrátanos</a>  
         </header>
-        <section class="container">
-            <h1 class="text-center display-2">Rellename de CUM por favor aaaaaaaaaaah</h1>
+        <section class="container d-flex flex-column align-items-center justify-content-center my-5" id="about">
+            <h1>¿Por qué Shiro?</h1>
+            <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, veritatis? Quis cum deleniti consequuntur quaerat, iure dolor aliquam minima eius dolore exercitationem ut. Esse tempore magnam, obcaecati hic inventore consequatur debitis dignissimos mollitia optio iure! Eos quia rem voluptatem dignissimos eum praesentium saepe rerum incidunt mollitia illum quae accusamus ratione repellendus doloribus, in quaerat adipisci voluptas distinctio ad, quod ipsa? Sunt fugit magni itaque rerum mollitia nemo a. Cumque assumenda nemo eaque ratione similique officia tempora rerum vel dolorem sint.</p>
+        </section>
+        <section class="container p-5 my-3" id="form">
+            <h2 class="text-center">¡Rellena este formulario para que te contactemos!</h2>
             <form action="/form" method="post" class="container-fluid d-flex flex-wrap justify-content-evenly mt-5">
                 <div class="input">
                     <label for=""> Nombre </label>
@@ -55,11 +62,150 @@
                 <div class="form-text mx-5">
                     <p class="lead text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil voluptatem velit aliquam ex alias quasi temporibus unde sit, nemo ad itaque, sapiente perspiciatis quidem fugit aliquid voluptatibus tenetur. Quo necessitatibus facilis expedita delectus placeat tempora, obcaecati unde? Totam ab in eius deleniti dolore earum pariatur ipsum placeat repudiandae accusamus. <a href="#">Politica de Privacidad</a></p>
                 </div>
-                
-                <button class="btn btn-info mt-3">CONTRATA NUESTROS SERVICIOS </button>
+                <button class="btn mt-3">CONTRATA NUESTROS SERVICIOS </button>
             </form>
-            
+        </section>
+        <section class="container my-5" id="servicios">
+            <h2 class="text-center">¿Qué servicios ofrecemos?</h2>
+            <div class="container-fluid d-flex">
+               <img src="./images/diseño-web.png" alt="diseño web">
+               <div class="container-fluid d-flex flex-column justify-content-center"> 
+                    <h3>Diseño Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio officiis facilis, a aspernatur repellat nisi corporis? Incidunt quos laborum ab similique, esse nisi consectetur placeat nostrum adipisci nemo fuga, commodi minus, nihil provident repellat reiciendis ex nobis? Assumenda saepe iste amet error ad dignissimos earum, quod fuga possimus quae dicta repellendus delectus. Vel fugiat itaque quibusdam blanditiis deserunt, consectetur iste magni harum modi culpa. Harum eligendi repudiandae quam sapiente sit tenetur rem cumque voluptates culpa provident necessitatibus beatae, molestias debitis ipsum ratione error aperiam! Laborum, dolorum. Impedit atque expedita, qui doloremque nesciunt iusto voluptas rem fuga natus architecto, debitis soluta.</p>
+               </div>
+            </div>
+            <div class="container-fluid d-flex">
+                <div class="container-fluid d-flex flex-column justify-content-center"> 
+                     <h3>Diseño Gráfico</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio officiis facilis, a aspernatur repellat nisi corporis? Incidunt quos laborum ab similique, esse nisi consectetur placeat nostrum adipisci nemo fuga, commodi minus, nihil provident repellat reiciendis ex nobis? Assumenda saepe iste amet error ad dignissimos earum, quod fuga possimus quae dicta repellendus delectus. Vel fugiat itaque quibusdam blanditiis deserunt, consectetur iste magni harum modi culpa. Harum eligendi repudiandae quam sapiente sit tenetur rem cumque voluptates culpa provident necessitatibus beatae, molestias debitis ipsum ratione error aperiam! Laborum, dolorum. Impedit atque expedita, qui doloremque nesciunt iusto voluptas rem fuga natus architecto, debitis soluta.</p>
+                </div>
+                <img src="./images/diseño-grafico.png" alt="diseño web">
+            </div>
+            <div class="container-fluid d-flex">
+                <img src="./images/marketing-digital.png" alt="diseño web">
+                <div class="container-fluid d-flex flex-column justify-content-center"> 
+                     <h3>Marketing Digital</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio officiis facilis, a aspernatur repellat nisi corporis? Incidunt quos laborum ab similique, esse nisi consectetur placeat nostrum adipisci nemo fuga, commodi minus, nihil provident repellat reiciendis ex nobis? Assumenda saepe iste amet error ad dignissimos earum, quod fuga possimus quae dicta repellendus delectus. Vel fugiat itaque quibusdam blanditiis deserunt, consectetur iste magni harum modi culpa. Harum eligendi repudiandae quam sapiente sit tenetur rem cumque voluptates culpa provident necessitatibus beatae, molestias debitis ipsum ratione error aperiam! Laborum, dolorum. Impedit atque expedita, qui doloremque nesciunt iusto voluptas rem fuga natus architecto, debitis soluta.</p>
+                </div>
+            </div>
+            <div class="container-fluid d-flex">
+                <div class="container-fluid d-flex flex-column justify-content-center"> 
+                     <h3>Community Managing</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio officiis facilis, a aspernatur repellat nisi corporis? Incidunt quos laborum ab similique, esse nisi consectetur placeat nostrum adipisci nemo fuga, commodi minus, nihil provident repellat reiciendis ex nobis? Assumenda saepe iste amet error ad dignissimos earum, quod fuga possimus quae dicta repellendus delectus. Vel fugiat itaque quibusdam blanditiis deserunt, consectetur iste magni harum modi culpa. Harum eligendi repudiandae quam sapiente sit tenetur rem cumque voluptates culpa provident necessitatibus beatae, molestias debitis ipsum ratione error aperiam! Laborum, dolorum. Impedit atque expedita, qui doloremque nesciunt iusto voluptas rem fuga natus architecto, debitis soluta.</p>
+                </div>
+                <img src="./images/community-manager.png" alt="diseño web">
+            </div>
+        </section>
+        <section class="container my-5" id="portfolio">
+            <h1 class="text-center mb-5">Portfolio</h1>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/carousel/apple.png" class="d-block w-100 h-300" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/carousel/microsoft.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/carousel/sony.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section class="container" id="artistas">
+            <h2 class="text-center">Nuestros Artistas</h2>
+            <div class="container d-flex flex-wrap justify-content-center">
+                <div class="artist-picture">
+                    <img src="./images/artistas/1.jpg" alt="artista" class="img-fluid">
+                    <p>Gigachad</p>
+                    <ul class="social-media-icons">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="artist-picture">
+                    <img src="./images/artistas/2.jpg" alt="artista" class="img-fluid">
+                    <p>Gigachad</p>
+                    <ul class="social-media-icons">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="artist-picture">
+                    <img src="./images/artistas/3.png" alt="artista" class="img-fluid">
+                    <p>Gigachad</p>
+                    <ul class="social-media-icons">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+                
         </section>
     </main>
+
+    <footer class="container-fluid">
+        <div class="container-fluid d-flex">
+
+        </div>
+        <div>
+            <p class="text-center">&copy 2023 Shiro Company S.A. Todos los Derechos Reservados</p>
+        </div>
+    
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 </body>
 </html>
