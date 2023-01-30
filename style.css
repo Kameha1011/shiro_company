@@ -4,7 +4,6 @@ body{
   overflow-x: hidden;
 }
 /*   Navbar */
-
 .navbar{
     border-bottom: .3rem solid #422800;
     background-color: #e4c8a9;
@@ -84,6 +83,8 @@ transform: translate(2px, 2px);
 /*********************/
 /* Call to action Form */
 #form{
+  width: 70%;
+  margin: auto;
   border-radius: 1rem;
   background-color: #a17048;
   color: #650d03;
@@ -119,7 +120,7 @@ transform: translate(2px, 2px);
 
 /*   Artistas    */
 .artist-picture{
-  margin: 5rem 3rem;
+  margin: 0 3rem;
   color: #fff;
 }
 .artist-picture p{
@@ -154,9 +155,116 @@ footer i{
 
 /************/
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .cta-button {
     min-width: 120px;
     padding: 0 25px;
 }
+/* Servicios  */
+#servicios img{
+  width: 30rem;
+  height: 25rem;
+}
+.servicio:nth-child(odd){
+  flex-direction: column;
+}
+.servicio:nth-child(even){
+  flex-direction: column-reverse;
+}
+/**************/
+/*  Artistas  */
+.artist-picture{
+  margin: 0 5px;
+}
+.artist-picture img{
+  height: 20rem;
+}
+.artist-picture .social-media-icons{
+  left: 16rem;
+}
+/**************/
+}
+
+
+@media (max-width: 425px){
+  /*   navbar   */
+  .navbar-center{
+    margin: 0;
+  }
+  /*************/
+  /*  header  */
+  header{
+    height: 70vh;
+    color: #650d03;
+    background-image: none;
+  }
+  /************/
+  /* Servicios  */
+  #servicios img{
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  /*  Portfolio */
+  #portfolio{
+    display: none;
+   }
+  /**************/
+ 
+/*  Artistas  */
+  .artist-picture .social-media-icons{
+    left: 14rem;
+  }
+/**************/
+
+/*  Contact Form  */
+#form {
+  border-radius: 0;
+ 
+}
+#form .input{
+  margin-bottom: 1rem ;
+}
+
+/******************/
+/* footer  */
+footer{
+  height: 15rem;
+}
+}
+
+@media (max-width: 375px){
+  /* Servicios  */
+  #servicios img{
+    width: 15rem;
+    height: 15rem;
+  }
+  /**************/
+  /*  Artistas  */
+  .artist-picture{
+    margin: 0;
+  }
+  .artist-picture img{
+    height: 15rem;
+  }
+  .artist-picture .social-media-icons{
+    bottom: 17rem;
+    left: 16rem;
+  }
+/**************/
+}
+@media (max-width: 320px){
+  /*  Artistas  */
+  .artist-picture{
+    margin: 0;
+  }
+  .artist-picture img{
+    height: 15rem;
+  }
+  
+  .artist-picture .social-media-icons{
+   
+    left: 13rem;
+  }
+  /**************/
 }
