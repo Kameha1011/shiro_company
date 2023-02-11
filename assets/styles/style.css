@@ -6,7 +6,6 @@ body{
 }
 /*   Navbar */
 .navbar{
-    border-bottom: .3rem solid #422800;
     background-color: transparent;
     color: #e4c8a9;
     position: fixed;
@@ -15,6 +14,7 @@ body{
     transition: 400ms ease-in-out backgroun-color;
 }
 #navbar{
+  border-bottom: .3rem solid #422800;
   background-color: #a17048;
   transition: 200ms ease-in-out all;
 }
@@ -133,7 +133,8 @@ a:hover{
   margin: 0 3rem;
   color: #fff;
 }
-.artist-picture p{
+.artist-picture .artist-name{
+  visibility: hidden;
   position: relative;
   left: 1rem;
   bottom: 2rem;
@@ -143,7 +144,7 @@ a:hover{
   width: 20rem;
 }
 .artist-picture .social-media-icons{
-  
+  visibility: hidden;
   position: relative;
   left: 16rem;
   bottom: 22rem;
@@ -165,6 +166,13 @@ footer i{
 }
 
 /************/
+/* added with JS */
+.show-block{
+  visibility: visible !important;
+  transition: 4s ease-in-out visibility;
+}
+/*****************/
+
 
 @media (max-width: 768px) {
    /*   navbar   */
@@ -200,8 +208,6 @@ footer i{
 }
 /**************/
 }
-
-
 @media (max-width: 425px){
  
   /*  header  */
