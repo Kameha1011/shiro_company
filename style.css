@@ -205,6 +205,9 @@ footer i{
     background-image: none;
   }
   /************/
+  main {
+    top: 50vh;
+  }
   /* Servicios  */
   #servicios img{
     width: 15rem;
@@ -260,6 +263,7 @@ footer{
 /**************/
 }
 @media (max-width: 320px){
+  
   /*  Artistas  */
   .artist-picture{
     margin: 0;
