@@ -228,8 +228,8 @@ footer i{
 
 /*  Contact Form  */
 #form {
-  border-radius: 0;
- 
+  width: 90%;
+  margin: 0 auto;
 }
 #form .input{
   margin-bottom: 1rem ;
