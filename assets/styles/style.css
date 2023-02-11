@@ -8,10 +8,15 @@ body{
 .navbar{
     border-bottom: .3rem solid #422800;
     background-color: transparent;
-    color: #650d03;
+    color: #e4c8a9;
     position: fixed;
     width: 100%;
     z-index: 2;
+    transition: 400ms ease-in-out backgroun-color;
+}
+#navbar{
+  background-color: #a17048;
+  transition: 200ms ease-in-out all;
 }
 .navbar-center{
     margin: 0 16rem;
@@ -162,6 +167,11 @@ footer i{
 /************/
 
 @media (max-width: 768px) {
+   /*   navbar   */
+   .navbar-center{
+    margin: 0;
+  }
+  /*************/
 .cta-button {
     min-width: 120px;
     padding: 0 25px;
@@ -193,11 +203,7 @@ footer i{
 
 
 @media (max-width: 425px){
-  /*   navbar   */
-  .navbar-center{
-    margin: 0;
-  }
-  /*************/
+ 
   /*  header  */
   header{
     height: 70vh;
