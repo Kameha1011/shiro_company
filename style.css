@@ -1,13 +1,15 @@
 body{
   margin: 0;
   background-color: #e4c8a9;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 /*   Navbar */
 .navbar{
     border-bottom: .3rem solid #422800;
-    background-color: #e4c8a9;
+    background-color: transparent;
     color: #650d03;
+    z-index: 1;
 }
 .navbar-center{
     margin: 0 16rem;
@@ -16,35 +18,10 @@ body{
   color: #650d03;
 }
 
-
-
-/* main styles */
-main{
-  width: 100%;
-  height: auto;
-  background-color: #e4c8a9;
-  color:  #650d03;
-  overflow: hidden;
-}
-a{
-  text-decoration: none;
-  color: #422800;
-}
-a:hover{
-  text-decoration: none;
-  color: #422800;
-}
-.lead{
-  color: #650d03;
-}
-.btn {
-  background-color: #650d03;
-  color: #e4c8a9;
-  border: 1px solid #422800;
-}
-/**************/
 /*   Head */
 header{
+  position: absolute;
+  top: 0;
   height: 100vh;
   background-image: url(./images/banner.jpg);
   background-size: 100% 100vh;
@@ -81,6 +58,35 @@ box-shadow: #422800 2px 2px 0 0;
 transform: translate(2px, 2px);
 }
 /*********************/
+
+/* main styles */
+main{
+  position: relative;
+  top: 100vh;
+  width: 100%;
+  height: auto;
+  background-color: #e4c8a9;
+  color:  #650d03;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: #422800;
+}
+a:hover{
+  text-decoration: none;
+  color: #422800;
+}
+.lead{
+  color: #650d03;
+}
+.btn {
+  background-color: #650d03;
+  color: #e4c8a9;
+  border: 1px solid #422800;
+}
+/**************/
+
 /* Call to action Form */
 #form{
   width: 70%;
@@ -99,7 +105,7 @@ transform: translate(2px, 2px);
   box-shadow: none;
 }
 .form-text{
-  width: 60rem;
+  line-height: 1.2rem;
 }
 /************************/
 /*   Servicios   */
