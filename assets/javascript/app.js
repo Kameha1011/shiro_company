@@ -15,18 +15,15 @@ for (let i = 0; i < allIcons.length; i++) {
     artistImg.addEventListener('mouseover', () => {
         artistName.classList.add('show-block');
         icons.classList.add('show-block');
-        console.log('ejele');
     });
     artistImg.addEventListener('mouseleave', () => {
         artistName.classList.remove('show-block');
         icons.classList.remove('show-block');
-        console.log('chao');
     })
 }
 // animation
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach((entry) =>{
-        console.log(entry)
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {

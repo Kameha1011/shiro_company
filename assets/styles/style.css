@@ -10,7 +10,7 @@ body{
     color: #e4c8a9;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     transition: 400ms ease-in-out backgroun-color;
 }
 #navbar{
@@ -151,6 +151,15 @@ a:hover{
   list-style: none;
 }
 
+/* testimonials */
+#testimonials .client{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  object-fit: cover;
+}
+
+
 /*  footer  */
 footer{
 
@@ -191,7 +200,12 @@ footer i{
 #artistas .hidden:nth-child(3){
   transition-delay: 300ms;
 }
-
+@media (max-width: 1024px){
+  /*   navbar   */
+  .navbar-center{
+    margin: 0 4rem;
+  }
+}
 @media (max-width: 768px) {
    /*   navbar   */
    .navbar-center{
