@@ -12,7 +12,8 @@
 #BF5B04
 #F2F2F2
 
-TODO: Animaciones en el navbar para los links al hacer hover
+TODO: Animaciones en el navbar para los links al hacer hover backgroud color!
+TODO: Acortar el texto de por que shiro
 **/
 body{
   margin: 0;
@@ -38,6 +39,11 @@ body{
 
 .nav-link{
   color: #590C04;
+  font-weight: 500;
+}
+
+.nav-link:hover{
+  color: #F28907;
 }
 
 .logo-shiro{
