@@ -12,8 +12,7 @@
 #BF5B04
 #F2F2F2
 
-TODO: Animaciones en el navbar para los links al hacer hover backgroud color!
-TODO: Acortar el texto de por que shiro
+TODO: PONER A SHIRO DE FONDO EN POR QUE SHIRO
 **/
 body{
   margin: 0;
@@ -37,13 +36,18 @@ body{
   transition: 200ms ease-in-out all;
 }
 
-.nav-link{
-  color: #590C04;
-  font-weight: 500;
+.nav-link {
+  margin: .3rem;
+  color : #590C04;
+  background: linear-gradient(0deg, #D9B18F, #A66C4B) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  border-radius: .4rem;
 }
-
-.nav-link:hover{
-  color: #F28907;
+.nav-link:where(:hover, :focus-visible) {
+  color: #ffff;
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
 
 .logo-shiro{
