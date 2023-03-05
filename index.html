@@ -224,18 +224,18 @@
         </section>
         <section class="container-fluid p-lg-5 py-1 my-5" id="form">
             <h2 class="text-center">¡Rellena este formulario para que te contactemos!</h2>
-            <form action="/form" method="post" class="container-fluid d-flex flex-wrap justify-content-evenly mt-5">
+            <form class="container-fluid d-flex flex-wrap justify-content-evenly mt-5" id="contact-form">
                 <div class="input">
-                    <label for="nombre" class="form-label"> Nombre <sup>*</sup> </label>
-                    <input type="text" class="form-control" -name="nombre">
+                    <label for="from_nombre" class="form-label"> Nombre <sup>*</sup> </label>
+                    <input type="text" class="form-control" name="from_nombre" id="from_nombre">
                 </div>
                 <div class="input">
-                    <label for="apellido" class="form-label"> Apellido <sup>*</sup> </label>
-                    <input type="text" class="form-control" name="apellido">
+                    <label for="from_apellido" class="form-label"> Apellido <sup>*</sup> </label>
+                    <input type="text" class="form-control" name="from_apellido" id="from_apellido">
                 </div>
                 <div class="input">
-                    <label for="correo" class="form-label"> Correo <sup>*</sup> </label>
-                    <input type="email" class="form-control" name="correo">
+                    <label for="from_email" class="form-label"> Correo <sup>*</sup> </label>
+                    <input type="email" class="form-control" name="from_email" id="from_email">
                 </div>
                 <div class="form-text mx-md-5">
                     <p class="lead text-lg-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
@@ -244,7 +244,7 @@
                         delectus placeat tempora, obcaecati unde? Totam ab in eius deleniti dolore earum pariatur ipsum
                         placeat repudiandae accusamus. <a href="#">Politica de Privacidad</a></p>
                 </div>
-                <button class="btn mt-3">CONTRATA NUESTROS SERVICIOS </button>
+                <button class="btn mt-3" id="form-button">CONTRATA NUESTROS SERVICIOS </button>
             </form>
         </section>
     </main>
@@ -275,6 +275,13 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('G09TWQrLr5z_FIESM')
+    </script>
+    <script src="./assets/javascript/emailjs.js"></script>
 
 </body>
 
