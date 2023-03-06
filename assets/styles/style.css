@@ -14,6 +14,11 @@
 
 TODO: PONER A SHIRO DE FONDO EN POR QUE SHIRO
 **/
+/* thanks page */
+ #thanksBody{
+  height: 90vh;
+ }
+/*  */
 body{
   margin: 0;
   box-sizing: border-box;
@@ -155,6 +160,9 @@ a:hover{
 }
 /************************/
 /*   Portafolio  */
+#portfolio{
+  display: none;
+}
 .carousel img {
   height: 40rem;
 }
@@ -187,6 +195,9 @@ a:hover{
 }
 
 /* testimonials */
+#testimonials{
+  display: none;
+}
 #testimonials .client{
   width: 10rem;
   height: 10rem;
@@ -279,7 +290,7 @@ footer i{
  
   /*  header  */
   header{
-    height: 70vh;
+    height: 85vh;
     color: #650d03;
     background-position: center;
     background-size: cover;
