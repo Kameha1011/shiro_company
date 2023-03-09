@@ -12,7 +12,7 @@
 #BF5B04
 #F2F2F2
 
-TODO: PONER A SHIRO DE FONDO EN POR QUE SHIRO
+TODO: adobe xd, css, js
 **/
 /* policy page */
 #backBtn{
@@ -164,7 +164,7 @@ a:hover{
 /*   Servicios   */
 #servicios img{
   width: 35rem;
-  height: 25rem;
+  height: 20rem;
 
 }
 /************************/
@@ -308,7 +308,7 @@ footer i{
   
   /* Servicios  */
   #servicios img{
-    width: 15rem;
+    width: 100%;
     height: 15rem;
   }
   
@@ -343,7 +343,7 @@ footer{
 @media (max-width: 375px){
   /* Servicios  */
   #servicios img{
-    width: 15rem;
+    width: 100%;
     height: 15rem;
   }
   /**************/
