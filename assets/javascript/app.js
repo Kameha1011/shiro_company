@@ -1,6 +1,6 @@
 const nav = document.querySelector('nav');
 const allIcons = document.querySelectorAll('.social-media-icons');
-const artistNames = document.querySelectorAll('.artist-name');
+const artistNames = document.querySelectorAll('.artist-data');
 const artistImgs = document.querySelectorAll('.artist-picture');
 // change nav bgcolor
 window.addEventListener('scroll', () => {

@@ -185,13 +185,15 @@ a:hover{
   margin: 0 3rem;
   color: #fff;
 }
-.artist-picture .artist-name{
+ .artist-data{
+  color: #650d03;
   visibility: hidden;
   position: relative;
   left: 1rem;
-  bottom: 2rem;
+  bottom: 5rem;
 }
 .artist-picture img{
+  object-fit: cover;
   height: 20rem;
   width: 20rem;
 }
