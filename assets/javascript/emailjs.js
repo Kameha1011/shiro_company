@@ -12,9 +12,11 @@ document.getElementById('contact-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      window.location.replace('http://127.0.0.1:5500/thanks.html')
+      // window.location.replace('http://127.0.0.1:5500/thanks.html');
+      window.location.replace('https://shirocompany.com/thanks');
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      // alert(JSON.stringify(err));
+      window.location.replace('https://shirocompany.com/error');
     });
 });

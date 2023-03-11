@@ -186,7 +186,8 @@ a:hover{
   color: #fff;
 }
  .artist-data{
-  color: #650d03;
+  color: #fff;
+  font-weight: 700;
   visibility: hidden;
   position: relative;
   left: 1rem;
