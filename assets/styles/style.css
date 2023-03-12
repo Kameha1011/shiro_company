@@ -1,28 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/**
+#D9B18F
+#A66C4B
+#590C04
+#F2BBB6
+#0D0D0D
+
+#400610
+#BFAE5A
+#F28907
+#BF5B04
+#F2F2F2
+
+TODO: adobe xd, css, js
+**/
+/* policy page */
+#backBtn{
+  z-index: 1;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+/*  */
+/* thanks page */
+ #thanksBody{
+  height: 90vh;
+  color: #2b0209;
+ }
+/*  */
 body{
   margin: 0;
-  background-color: #e4c8a9;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 /*   Navbar */
 .navbar{
+    font-size: 20px;
+    font-weight: 500;
     background-color: transparent;
-    color: #e4c8a9;
     position: fixed;
     width: 100%;
     z-index: 3;
-    transition: 400ms ease-in-out backgroun-color;
+    transition: 400ms ease-in-out background-color;
 }
 #navbar{
-  border-bottom: .3rem solid #422800;
-  background-color: #a17048;
+  border-bottom: .3rem solid #590C04;
+  background-color: #fffefbe0;
   transition: 200ms ease-in-out all;
 }
-.navbar-center{
-    margin: 0 16rem;
+
+.nav-link {
+  margin: .3rem;
+  color : #590C04;
+  background: linear-gradient(0deg, #D9B18F, #A66C4B) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  border-radius: .4rem;
 }
-.nav-link, .navbar-brand{
-  color: #650d03;
+.nav-link:where(:hover, :focus-visible) {
+  color: #ffff;
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.logo-shiro{
+  width: 20rem;
 }
 
 /*   Head */
@@ -31,6 +74,13 @@ header{
   background-image: url(../images/chao.jpg);
   background-size: 100% 100vh;
   background-repeat: no-repeat;
+}
+
+.text-rocky{
+  padding: 2rem;
+  background-color: rgba(101, 13, 3, 0.4);
+  /* border: #590C04 .3rem solid; */
+  border-radius: 1rem;
   color: #fbeee0;
 }
 
@@ -62,15 +112,14 @@ background-color: #fff;
 box-shadow: #422800 2px 2px 0 0;
 transform: translate(2px, 2px);
 }
-/*********************/
 
 /* main styles */
 main{
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #e4c8a9;
-  color:  #650d03;
+  background-color: #e8c39e;
+  color:  #590C04;
   overflow: hidden;
 }
 a{
@@ -115,11 +164,14 @@ a:hover{
 /*   Servicios   */
 #servicios img{
   width: 35rem;
-  height: 25rem;
+  height: 20rem;
 
 }
 /************************/
 /*   Portafolio  */
+#portfolio{
+  display: none;
+}
 .carousel img {
   height: 40rem;
 }
@@ -133,13 +185,16 @@ a:hover{
   margin: 0 3rem;
   color: #fff;
 }
-.artist-picture .artist-name{
+ .artist-data{
+  color: #fff;
+  font-weight: 700;
   visibility: hidden;
   position: relative;
   left: 1rem;
-  bottom: 2rem;
+  bottom: 5rem;
 }
 .artist-picture img{
+  object-fit: cover;
   height: 20rem;
   width: 20rem;
 }
@@ -152,6 +207,9 @@ a:hover{
 }
 
 /* testimonials */
+#testimonials{
+  display: none;
+}
 #testimonials .client{
   width: 10rem;
   height: 10rem;
@@ -244,15 +302,16 @@ footer i{
  
   /*  header  */
   header{
-    height: 70vh;
+    height: 85vh;
     color: #650d03;
-    background-image: none;
+    background-position: center;
+    background-size: cover;
   }
   /************/
   
   /* Servicios  */
   #servicios img{
-    width: 15rem;
+    width: 100%;
     height: 15rem;
   }
   
@@ -287,7 +346,7 @@ footer{
 @media (max-width: 375px){
   /* Servicios  */
   #servicios img{
-    width: 15rem;
+    width: 100%;
     height: 15rem;
   }
   /**************/
