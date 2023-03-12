@@ -13,10 +13,10 @@ document.getElementById('contact-form')
     .then(() => {
       btn.value = 'Send Email';
       // window.location.replace('http://127.0.0.1:5500/thanks.html');
-      window.location.replace('https://shirocompany.com/thanks');
+      window.location.replace('https://shirocompany.com/thanks.html');
     }, (err) => {
       btn.value = 'Send Email';
       // alert(JSON.stringify(err));
-      window.location.replace('https://shirocompany.com/error');
+      window.location.replace('https://shirocompany.com/error.html');
     });
 });
