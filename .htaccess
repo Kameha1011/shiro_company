@@ -2,6 +2,7 @@
 RewriteEngine On
 
 ErrorDocument 404 https://shirocompany.com/error
+ErrorDocument 500 https://shirocompany.com/error
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f 
