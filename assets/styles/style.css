@@ -71,7 +71,7 @@ body{
 /*   Head */
 header{
   height: 100vh;
-  background-image: url(../images/chao.jpg);
+  background-image: url(../images/chao.webp);
   background-size: 100% 100vh;
   background-repeat: no-repeat;
 }
