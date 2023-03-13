@@ -302,7 +302,6 @@ footer i{
  
   /*  header  */
   header{
-    height: 85vh;
     color: #650d03;
     background-position: center;
     background-size: cover;
@@ -344,6 +343,9 @@ footer{
 }
 
 @media (max-width: 375px){
+  header .text-rocky{
+    margin-top: 5rem;
+  }
   /* Servicios  */
   #servicios img{
     width: 100%;
